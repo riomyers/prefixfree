@@ -39,9 +39,9 @@
 	</ul>
 </nav>
 
-<blockquote cite="http://twitter.com/meyerweb/status/124618575263711232">
+<blockquote cite="https://twitter.com/meyerweb/status/124618575263711232">
 	<p>“[-prefix-free is] fantastic, top-notch work! Thank you for creating and sharing it.”</p>
-	— <a href="http://twitter.com/meyerweb/status/124618575263711232" target="_blank">Eric Meyer</a>
+	— <a href="https://twitter.com/meyerweb/status/124618575263711232" target="_blank">Eric Meyer</a>
 </blockquote>
 
 <div class="section-container">
@@ -135,7 +135,7 @@
 .-webkit- .myselector {
     transform: rotate(15deg) rotateX(0);
 }</pre>
-		<p>It’t not ideal, but it’s a solution, until a more intuitive way to deal with these cases is added in -prefix-free.</p>
+		<p>It’s not ideal, but it’s a solution, until a more intuitive way to deal with these cases is added in -prefix-free.</p>
 		<p>Please note that in unsupported browsers like IE8, no such class will be added.</p>
 	</section>
 	
@@ -157,7 +157,7 @@
 		<h1>Something like this belongs to the server-side</h1>
 		<p>A server side script would need to add all prefixes, making the size of the CSS file considerably larger. Also, it should maintain a list of features that need prefixes, or add them all and unnecessarily bloat the stylesheet. -prefix-free automatically detects what needs a prefix and what doesn’t.</p>
 		<p>Also, a common argument against doing this on the client side, is that it makes the design rely on JavaScript. However, that is completely false: If JS is disabled, only some of the CSS3 won’t show. But if your design <em>relies</em> on CSS3 to be functional, you have bigger problems bro.</p>
-		<p>You can read some more about this in my recent <a href="http://css-tricks.com/14792-five-questions-with-lea-verou/#lea-question-2">CSS Tricks interview</a></p>
+		<p>You can read some more about this in my recent <a href="https://css-tricks.com/five-questions-with-lea-verou/#lea-question-2"/>CSS Tricks interview</a></p>
 		<p>But every solution has its own pros and cons. If you would feel more comfortable with a server-side script, use that and don’t troll me please. Remember: nobody forced you to use -prefix-free. <strong>KTHXBAI ☺</strong></p>
 	</section>
 </section>
@@ -208,17 +208,14 @@
 		<p>A static polyfill for the new <a href="http://www.w3.org/TR/css3-values/#viewport-relative-lengths">vw, vh, vmin, vmax units</a>.</p>
 		<ul class="features">
 			<li>Will do nothing if the units are supported natively.</li>
-		</ul>
-		Limitations:
-		<ul class="drawbacks">
-			<li>It’s not dynamic. The lengths are replaced once, and then they function as normal CSS pixel values. So, they won’t update when the window is resized, but only on load.</li>
+			<li>It’s dynamic. Pixel values are updated on screen resize.</li>
 		</ul>
 		<ul>
 			<li><a href="https://raw.github.com/LeaVerou/prefixfree/gh-pages/plugins/prefixfree.viewport-units.js">prefixfree.viewport-units.js</a></li>
 		</ul>
 	</section>
 	
-	<section id="viewport-units">
+	<section id="css-variables">
 		<h1>CSS Variables</h1>
 		<p>Enables rudimentary <a href="http://www.w3.org/TR/css-variables/">CSS variables</a> support.</p>
 		<ul class="features">
@@ -237,18 +234,18 @@
 </section>
 
 <footer>
-	<a href="http://twitter.com/prefixfree" target="_blank">@prefixfree</a>
+	<a href="https://twitter.com/prefixfree" target="_blank">@prefixfree</a>
 	✿ <a href="https://github.com/LeaVerou/prefixfree/commits/gh-pages.atom" target="_blank">Commits feed</a>
 	✿ Made by <a href="http://lea.verou.me/">Lea Verou</a> with care
 </footer>
 
 <script src="index.js"></script>
 
-<a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="prefixfree" data-related="LeaVerou">Tweet</a>
-<script src="http://platform.twitter.com/widgets.js"></script>
+<a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="prefixfree" data-related="LeaVerou">Tweet</a>
+<script src="https://platform.twitter.com/widgets.js"></script>
 
 <script>var _gaq = [['_setAccount', 'UA-25106441-4'],['_trackPageview']];</script>
-<script src="http://www.google-analytics.com/ga.js" async></script>
+<script src="https://www.google-analytics.com/ga.js" async></script>
 
 </body>
 </html>
